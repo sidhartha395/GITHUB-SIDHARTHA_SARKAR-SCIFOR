@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+
+
+   
+    <center>
+
+        <h3>Sign up</h3>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" pattern="[a-z]+" required placeholder="enter name"><br><br>
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" pattern="[a-z]+" required placeholder="enter username"><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-z]+" required placeholder="enter password"><br><br>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="70" required ><br><br>
+            
+            <input type="submit" value="Sign up" >
+          </form>
+    
+    </center>
+</body>
+</html>
