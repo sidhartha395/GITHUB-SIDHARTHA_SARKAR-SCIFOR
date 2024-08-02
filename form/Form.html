@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body><center>
+
+    <h2>Simple html form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Z]+" title="Only uppercase letters (A-Z) are allowed" placeholder="Enter Your Name"><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Z]+" title="Only uppercase letters (A-Z) are allowed" placeholder="Enter Your Username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[A-Z]+" title="Only uppercase letters (A-Z) are allowed" placeholder="Enter Your Password"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="20" max="60" title="Age must be between 20 and 60"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </center>
+</body>
+</html>

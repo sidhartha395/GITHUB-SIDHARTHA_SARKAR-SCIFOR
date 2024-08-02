@@ -1,0 +1,14 @@
+Semantic Elements:
+
+- Semantic elements in HTML provide meaning to a web page's structure, making it accessible, SEO-friendly, and easier to maintain.
+
+- Here are some example of semantic Elements:
+
+Headers: <h1>, <h2>, etc.
+Paragraphs: <p>
+Images: <img>
+Links: <a>
+Lists: <ul>, <ol>, <li>
+Tables: <table>, <tr>, <td>
+
+- These elements help define the content and structure of a web page.
