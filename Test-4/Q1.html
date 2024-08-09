@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling with CSS Variables</title>
+    <style>
+       
+        :root {
+            --primary-color: #87CEEB; 
+            --secondary-color: #008000; 
+            --text-color: #333333;
+            --button-padding: 12px 24px;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: var(--button-padding);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+        }
+
+        p {
+            color: var(--text-color);
+            background-color: #f7f7f7; 
+            padding: 20px; 
+            border-left: 5px solid var(--primary-color); 
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading Styled with CSS Variables</h1>
+    <button>Click Here</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugiat, iste neque rerum voluptate molestiae nam quasi cumque laboriosam maiores ducimus animi assumenda incidunt voluptas ipsam veritatis doloribus dicta suscipit laudantium nobis dolore consequuntur odio reprehenderit ratione! Eaque ea rerum officiis vel veritatis a culpa..</p>
+</body>
+</html>
