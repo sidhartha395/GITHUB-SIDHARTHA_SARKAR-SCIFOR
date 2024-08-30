@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    <style>
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-section {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .card-section h4 {
+            margin-top: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-section p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-section button {
+            width: 100%;
+            margin-top: 20px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .card-section button:hover {
+            background-color: #23527c;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 640px) {
+            .card {
+                margin-bottom: 10px;
+            }
+            .card img {
+                height: 100px;
+            }
+            .card-section {
+                padding: 15px;
+            }
+            .card-section button {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-6 large-4">
+                <div class="card">
+                    <img src="pikaso_texttoimage_A-fierce-wolf-with-humanlike-features-highly-muscu.jpeg" alt="Card Image">
+                    <div class="card-section">
+                        <h4>Wolf Warrior</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                        <button class="button">Call to Action</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+</body>
+</html>
