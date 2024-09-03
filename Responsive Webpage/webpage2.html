@@ -1,0 +1,234 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Blogging</title>
+   
+     <style>
+        
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #c8f7c4; 
+}
+
+
+.header {
+    background-color: #73ba4f; 
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover {
+    color: #F7DC6F; 
+}
+
+
+
+.hero {
+    background-image: linear-gradient(to bottom, #F7DC6F, #F2C464); 
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+
+.hero button.btn {
+    background-color: #F7DC6F; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero button.btn:hover {
+    background-color: #F2C464; 
+}
+
+
+
+.blog-posts {
+    background-color: #FFF2CC; 
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-posts li {
+    margin-bottom: 20px;
+}
+
+.blog-posts h3 {
+    font-weight: bold;
+    margin-top: 0;
+    color: #337AB7; 
+}
+
+.blog-posts p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+.sidebar {
+    background-color: #F7F2C4; 
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    margin-left: 2em;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: #337AB7; 
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #23527C; 
+}
+
+
+
+.footer {
+    background-color: #F2C464; 
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+    .hero button.btn {
+        font-size: 14px;
+    }
+}
+     </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <h1>Welcome to Happy Blogging!</h1>
+            <button class="btn">Start Reading</button>
+        </section>
+        <section class="blog-posts">
+            <h2>Latest Posts</h2>
+            <ul>
+                <li>
+                    <h3>Post 1: Happy Thoughts</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </li>
+                <li>
+                    <h3>Post 2: Sunshine and Smiles</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </li>
+                <li>
+                    <h3>Post 3: Happy Memories</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Happy Thoughts</a></li>
+                <li><a href="#">Sunshine and Smiles</a></li>
+                <li><a href="#">Happy Memories</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Happy Blogging</p>
+    </footer>
+</body>
+</html>
