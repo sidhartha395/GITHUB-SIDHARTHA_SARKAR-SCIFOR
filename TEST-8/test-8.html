@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Comparison Program</title>
+</head>
+<body>
+  <h1>Comparison Program</h1>
+  <button onclick="let num1 = prompt('Enter the first value:'); let num2 = prompt('Enter the second value:'); 
+  let result = `You entered: ${num1} and ${num2}<br>`; 
+  result += `==: ${num1 == num2}<br>`; 
+  result += `===: ${num1 === num2}<br>`; 
+  result += `!=: ${num1 != num2}<br>`; 
+  result += `!==: ${num1 !== num2}<br>`; 
+  result += `<: ${num1 < num2}<br>`; 
+  result += `>: ${num1 > num2}<br>`; 
+  result += `<=: ${num1 <= num2}<br>`; 
+  result += `>=: ${num1 >= num2}<br>`; 
+  document.getElementById('result').innerHTML = result;">Check</button>
+  <div id="result"></div>
+</body>
+</html>
